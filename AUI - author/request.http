@@ -1,0 +1,61 @@
+GET http://localhost:8080/api/authors
+
+###
+
+GET http://localhost:8080/api/authors/3
+
+###
+
+GET http://localhost:8080/api/paintings/6
+
+###
+
+POST http://localhost:8080/api/authors
+Content-Type: application/json
+
+{
+  "nameAndSurname": "Salvador Dalí",
+  "yearOfBirth": 1904
+}
+
+###
+
+PUT http://localhost:8080/api/authors/1
+Content-Type: application/json
+
+{
+  "nameAndSurname": "Jan Martejko",
+  "yearOfBirth": 1000
+}
+
+###
+
+PUT http://localhost:8080/api/paintings/1
+Content-Type: application/json
+
+{
+  "title": "zmieniony",
+  "year": 9999,
+  "author": 2
+}
+
+###
+
+DELETE http://localhost:8080/api/paintings/2
+
+###
+
+
+DELETE http://localhost:8081/api/authors/1
+
+###
+POST http://localhost:8080/api/paintings
+Content-Type: application/json
+
+{
+  "title": "test",
+  "year": 1900,
+  "author": 3
+}
+
+###

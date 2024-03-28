@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Paintings and authors"/>
+    <meta name="keywords" content="Paintings and authors"/>
+    <meta name="author" content="Kacper Bieryło"/>
+    <title>Paintings and authors</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="painting_edit.css"/>
+    <script src="../script.js" defer="defer"></script>
+    <script type="module" src="painting_edit.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Paintings and authors</h1>
+    </header>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../index.html">main</a></li>
+            <!--            <li><a href="../about/about.html">about</a></li>-->
+            <li><a href="../author_list/author_list.html">authors</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+        <article class="text--justified">
+            <header><h2>Edit painting info</h2></header>
+            <form class="painting__form" id="infoForm">
+                <label for="title">Title:</label>
+                <input class="ui-control ui-input" id="title" name="title"/>
+                <label for="year">Year:</label>
+                <input class="ui-control ui-input" id="year" name="year" type="number"/>
+                <input class="ui-control ui-button" type="submit" name="Update"/>
+            </form>
+        </article>
+
+    </section>
+
+    <footer class="footer">
+        <p>Kacper Bieryło, 2021</p>
+    </footer>
+</div>
+</body>
+</html>

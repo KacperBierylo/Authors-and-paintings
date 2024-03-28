@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Paintings and authors"/>
+    <meta name="keywords" content="Paintings and authors"/>
+    <meta name="author" content="KB"/>
+    <title>Paintings and authors</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <script src="../script.js" defer="defer"></script>
+    <script type="module" src="author_list.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Paintings and authors</h1>
+    </header>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../index.html">main</a></li>
+<!--            <li><a href="../about/about.html">about</a></li>-->
+            <li><a href="author_list.html">authors</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+        <article class="text--justified">
+            <header><h2>Authors</h2></header>
+            <table class="data-table">
+                <thead>
+                <tr>
+                    <th>name and surname</th>
+                    <th>view</th>
+                    <th>edit</th>
+                    <th>delete</th>
+                </tr>
+                </thead>
+                <tbody id="tableBody">
+                <tr>
+                    <td>id</td>
+                    <td><a href="#">view</a></td>
+                    <td><a href="#">edit</a></td>
+                    <td>
+                        <button class="ui-button ui-control">delete</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+
+    <section class="form-section">
+        <article class="text--justified">
+            <header><h2>Add new author</h2></header>
+            <form class="author__form" id="infoForm">
+                <label for="nameAndSurname">Name and surname:</label>
+                <input class="ui-control ui-input" id="nameAndSurname" name="nameAndSurname"/>
+                <label for="yearOfBirth">Year of birth:</label>
+                <input class="ui-control ui-input" id="yearOfBirth" name="yearOfBirth" type="number"/>
+                <input class="ui-control ui-button" type="submit" name="Add"/>
+            </form>
+        </article>
+    </section>
+<!--    <a href="../author_add/author_add.html">-->
+<!--        <button>Add new author</button>-->
+<!--    </a>-->
+
+
+    <footer class="footer">
+        <p>Kacper Bieryło, 2021</p>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Paintings and authors"/>
+    <meta name="keywords" content="Paintings and authors"/>
+    <meta name="author" content="Kacper Bieryło"/>
+    <title>Paintings and authors</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="author_view.css"/>
+    <script src="../script.js" defer="defer"></script>
+    <script type="module" src="author_view.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Paintings and authors</h1>
+    </header>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../index.html">main</a></li>
+<!--            <li><a href="../about/about.html">about</a></li>-->
+            <li><a href="../author_list/author_list.html">authors</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+        <article class="text--justified">
+            <header><h2 id="nameTitle">Author</h2></header>
+            <section>
+                <h3>Details</h3>
+                <div class="details-grid">
+                    <label for="id">ID:</label><span id="id">ID</span>
+                    <label for="nameAndSurname">NameSurname:</label><span id="nameAndSurname">NameSurname</span>
+                    <label for="yearOfBirth">YearOfBirth:</label><span id="yearOfBirth">YearOfBirth</span>
+                </div>
+            </section>
+            <section>
+                <h3>Paintings</h3>
+                <table class="data-table">
+                    <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>view</th>
+                        <th>edit</th>
+                        <th>delete</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    <tr>
+                        <td>name</td>
+                        <td><a href="#">view</a></td>
+                        <td><a href="#">edit</a></td>
+                        <td>
+                            <button class="ui-button ui-control">delete</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+    </section>
+
+    <section class="form-section">
+        <article class="text--justified">
+            <header><h2>Add new painting</h2></header>
+            <form class="author__form" id="infoForm">
+                <label for="title">Title:</label>
+                <input class="ui-control ui-input" id="title" name="title"/>
+                <label for="year">Year:</label>
+                <input class="ui-control ui-input" id="year" name="year" type="number"/>
+                <input class="ui-control ui-button" type="submit" name="Add"/>
+            </form>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>Kacper Bieryło, 180185</p>
+    </footer>
+</div>
+</body>
+</html>

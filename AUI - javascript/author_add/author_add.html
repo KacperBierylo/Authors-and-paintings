@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Simple RPG web application"/>
+    <meta name="keywords" content="RPG"/>
+    <meta name="author" content="Kacper Bieryło"/>
+    <title>Simple RPG</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="author_add.css"/>
+    <script src="../script.js" defer="defer"></script>
+    <script type="module" src="author_add.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Simple RPG</h1>
+    </header>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../index.html">main</a></li>
+<!--            <li><a href="../about/about.html">about</a></li>-->
+            <li><a href="../author_list/author_list.html">users</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+        <article class="text--justified">
+            <header><h2>Edit character info</h2></header>
+            <form class="author__form" id="infoForm">
+                <label for="nameAndSurname">Name and surname:</label>
+                <input class="ui-control ui-input" id="nameAndSurname" name="nameAndSurname"/>
+                <label for="yearOfBirth">Age:</label>
+                <input class="ui-control ui-input" id="yearOfBirth" name="yearOfBirth" type="number"/>
+                <input class="ui-control ui-button" type="submit" name="Add"/>
+            </form>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>KB</p>
+    </footer>
+</div>
+</body>
+</html>

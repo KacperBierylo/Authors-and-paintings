@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Paintings and authors"/>
+    <meta name="keywords" content="Paintings and authors"/>
+    <meta name="author" content="Kacper Bieryło"/>
+    <title>Paintings and authors</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="painting_view.css"/>
+    <script src="../script.js" defer="defer"></script>
+    <script type="module" src="painting_view.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Paintings and authors</h1>
+    </header>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../index.html">main</a></li>
+            <!--            <li><a href="../about/about.html">about</a></li>-->
+            <li><a href="../author_list/author_list.html">authors</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+        <article class="text--justified">
+            <header><h2 id="username">Painting</h2></header>
+            <section>
+                <h3>Details</h3>
+                <div class="details-grid">
+                    <label for="authorId">ID:</label><span id="authorId">Author's ID</span>
+                    <label for="Id">Author's ID:</label><span id="Id">ID</span>
+                    <label for="title">Title:</label><span id="title">Title</span>
+                    <label for="year">Year:</label><span id="year">Year</span>
+                </div>
+            </section>
+
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>Kacper Bieryło, 2021</p>
+    </footer>
+</div>
+</body>
+</html>
